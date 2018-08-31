@@ -20,6 +20,7 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path(' ', include('blog.urls') ),
     # ex: /backoffice/
    #clear
    # path('backoffice/', backoffice.views.home, name='back')
